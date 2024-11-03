@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="850.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniminuto.interfaztomyrepuestos.controller.InventarioController">
+   <ImageView fitHeight="858.0" fitWidth="1537.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../img/carroUno%20(1).jpg" />
+      </image>
+   </ImageView>
+
+   <Label layoutX="92.0" layoutY="64.0" text="Productos" textFill="#d9ff03">
+      <font>
+         <Font name="Arial Black" size="28.0" />
+      </font>
+   </Label>
+   <TextField alignment="CENTER" editable="false" layoutX="270.0" layoutY="71.0" opacity="0.64" prefHeight="25.0" prefWidth="224.0" promptText="Nro productos" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </TextField>
+   <Pane layoutX="92.0" layoutY="129.0" prefHeight="200.0" prefWidth="1255.0" style="-fx-border-color: white;">
+      <children>
+         <Label layoutX="14.0" layoutY="14.0" text="Nuevo producto" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="28.0" />
+            </font>
+         </Label>
+         <TextField layoutX="33.0" layoutY="100.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" />
+         <Label layoutX="98.0" layoutY="65.0" text="Nombre" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="18.0" />
+            </font>
+         </Label>
+         <TextField layoutX="312.0" layoutY="100.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" />
+         <Label layoutX="388.0" layoutY="65.0" text="Costo" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="18.0" />
+            </font>
+         </Label>
+         <TextField layoutX="581.0" layoutY="100.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" />
+         <Label layoutX="656.0" layoutY="65.0" text="Precio" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="18.0" />
+            </font>
+         </Label>
+         <TextField layoutX="892.0" layoutY="100.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" />
+         <Label layoutX="964.0" layoutY="65.0" text="Codigo" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="18.0" />
+            </font>
+         </Label>
+         <Button layoutX="1131.0" layoutY="145.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="102.0" style="-fx-background-color: #29E118; -fx-background-radius: 15; -fx-border-radius: 15;" text="Agregar" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </Pane>
+   <Pane layoutX="92.0" layoutY="329.0" prefHeight="511.0" prefWidth="1418.0">
+      <children>
+         <TextField alignment="CENTER" layoutX="14.0" layoutY="25.0" prefHeight="42.0" prefWidth="232.0" promptText="Buscar producto" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+            <font>
+               <Font name="Arial Black" size="19.0" />
+            </font>
+         </TextField>
+         <MenuButton layoutX="257.0" layoutY="26.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15;" text="Filtro">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Precio" />
+             <MenuItem mnemonicParsing="false" text="Cod" />
+               <MenuItem mnemonicParsing="false" text="Producto" />
+           </items>
+            <graphic>
+               <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../img/filtrar%20(1).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </MenuButton>
+         <TreeTableView layoutX="230.0" layoutY="104.0" prefHeight="379.0" prefWidth="906.0">
+           <columns>
+             <TreeTableColumn prefWidth="304.99998474121094" text="PRODUCTO" />
+             <TreeTableColumn prefWidth="175.20004272460938" text="COD" />
+               <TreeTableColumn prefWidth="152.0" text="PRECIO" />
+               <TreeTableColumn prefWidth="136.79998779296875" text="ACTIVO" />
+               <TreeTableColumn prefWidth="134.5999755859375" />
+           </columns>
+         </TreeTableView>
+      </children></Pane>
+
+   <fx:include source="menu.fxml" />
+</Pane>

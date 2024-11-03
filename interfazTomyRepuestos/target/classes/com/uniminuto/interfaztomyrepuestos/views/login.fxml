@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniminuto.interfaztomyrepuestos.controller.LoginController">
+   <children>
+      <ImageView fitHeight="859.0" fitWidth="1537.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/carroUno%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="14.0" prefHeight="93.0" prefWidth="969.0" text="Bienvenidos al sistema de ventas" textFill="#fee000">
+         <font>
+            <Font name="Comic Sans MS" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="628.0" fitWidth="711.0" layoutX="159.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logoTomy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="235.0" fitWidth="279.0" layoutX="814.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/login.png" />
+         </image></ImageView>
+      <Label layoutX="784.0" layoutY="361.0" prefHeight="37.0" prefWidth="329.0" text="INGRESA TU USUARIO" textFill="#fee000">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="785.0" layoutY="398.0" opacity="0.73" prefHeight="29.0" prefWidth="294.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="784.0" layoutY="435.0" prefHeight="37.0" prefWidth="329.0" text="INGRESA TU USUARIO" textFill="#fee000">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font></Label>
+      <TextField layoutX="785.0" layoutY="472.0" opacity="0.73" prefHeight="29.0" prefWidth="294.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <CheckBox layoutX="743.0" layoutY="535.0" mnemonicParsing="false" text="Recordarme" textFill="#fee000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="955.0" layoutY="525.0" prefHeight="37.0" prefWidth="189.0" text="Olvido su contraseña?" textFill="#fee000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="868.0" layoutY="586.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" text="Ingresar" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

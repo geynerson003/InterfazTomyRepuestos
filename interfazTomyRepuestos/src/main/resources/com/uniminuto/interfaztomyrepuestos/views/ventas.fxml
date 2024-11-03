@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="850.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniminuto.interfaztomyrepuestos.controller.VentasController">
+   <ImageView fitHeight="856.0" fitWidth="1530.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../img/carroUno%20(1).jpg" />
+      </image>
+   </ImageView>
+
+   <Pane layoutX="70.0" layoutY="85.0" prefHeight="451.0" prefWidth="353.0" style="-fx-border-color: white;">
+      <children>
+         <Label layoutX="14.0" layoutY="22.0" text="Datos del cliente" textFill="#d9ff03">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <TextField alignment="CENTER" layoutX="14.0" layoutY="58.0" prefHeight="27.0" prefWidth="77.0" promptText="COD" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <TextField editable="false" layoutX="113.0" layoutY="59.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <Label layoutX="14.0" layoutY="128.0" text="Datos del producto" textFill="#d9ff03">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <TextField alignment="CENTER" layoutX="71.0" layoutY="165.0" prefHeight="25.0" prefWidth="211.0" promptText="BUSCAR PRODUCTO" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <TextField editable="false" layoutX="71.0" layoutY="213.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <TextField accessibleRole="IMAGE_VIEW" alignment="CENTER" editable="false" layoutX="58.0" layoutY="269.0" prefHeight="27.0" prefWidth="88.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="37.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../img/peso.png" />
+            </image>
+         </ImageView>
+         <TextField accessibleRole="IMAGE_VIEW" alignment="CENTER" editable="false" layoutX="194.0" layoutY="269.0" prefHeight="27.0" prefWidth="88.0" promptText="COD" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <Button layoutX="91.0" layoutY="360.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="153.0" style="-fx-background-color: #29E118; -fx-background-radius: 20; -fx-border-radius: 20;" text="Agregar producto" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="13.0" />
+            </font>
+         </Button>
+      </children></Pane>
+
+   <Pane layoutX="515.0" layoutY="168.0" prefHeight="647.0" prefWidth="983.0" style="-fx-border-color: white;">
+      <children>
+         <Label layoutX="649.0" layoutY="29.0" text="NRO.SERIE" textFill="#d9ff03">
+            <font>
+               <Font name="Arial Black" size="22.0" />
+            </font>
+         </Label>
+         <TextField alignment="CENTER" layoutX="805.0" layoutY="29.0" prefHeight="32.0" prefWidth="160.0" promptText="COD" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+         <TreeTableView layoutX="19.0" layoutY="110.0" prefHeight="406.0" prefWidth="950.0">
+           <columns>
+             <TreeTableColumn prefWidth="75.0" text="Nro" />
+             <TreeTableColumn prefWidth="206.0" text="Producto" />
+               <TreeTableColumn prefWidth="108.60003662109375" text="COD" />
+               <TreeTableColumn minWidth="7.20001220703125" prefWidth="140.60003662109375" text="Precio" />
+               <TreeTableColumn prefWidth="183.5999755859375" text="Cantidad" />
+               <TreeTableColumn prefWidth="100.4000244140625" text="Total" />
+           </columns>
+         </TreeTableView>
+         <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="543.0" prefHeight="83.0" prefWidth="650.0" spacing="30.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+            <children>
+               <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: #29E118; -fx-background-radius: 20;" text="Generar venta" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Black" size="12.0" />
+                  </font>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Cancelar" textFill="WHITE" />
+               <Label text="Total a pagar">
+                  <font>
+                     <Font name="Arial Black" size="23.0" />
+                  </font>
+               </Label>
+               <TextField alignment="CENTER" editable="false" prefHeight="32.0" prefWidth="160.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+            </children>
+         </HBox>
+      </children>
+   </Pane>
+
+   <fx:include source="menu.fxml" />
+</Pane>
